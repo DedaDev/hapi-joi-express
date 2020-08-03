@@ -15,5 +15,8 @@
   ],
   "types": "index.d.ts",
   "author": "Deda",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@types/hapi__joi": "^17.1.4"
+  }
 }

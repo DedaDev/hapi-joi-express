@@ -1,7 +1,7 @@
 /**
- * 
- * @param {Object} schema 
- * @param {String} prop 
+ *
+ * @param {Object} schema
+ * @param {String} prop
  */
 const joiValidator = (schema, prop) => (req, res, next) => {
   const { error } = schema.validate(req[prop]);
@@ -13,7 +13,7 @@ const joiValidator = (schema, prop) => (req, res, next) => {
 };
 
 module.exports = {
-  bodyValidation: (schema) => joiValidator(schema, 'body'),
-  paramsValidation: (schema) => joiValidator(schema, 'params'),
-  queryValidation: (schema) => joiValidator(schema, 'query'),
+  bodyValidation: (schema) => joiValidator(schema, "body"),
+  paramsValidation: (schema) => joiValidator(schema, "params"),
+  queryValidation: (schema) => joiValidator(schema, "query"),
 };
