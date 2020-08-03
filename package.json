@@ -13,6 +13,7 @@
     "middleware",
     "validation"
   ],
+  "types": "index.d.ts",
   "author": "Deda",
   "license": "ISC"
 }
