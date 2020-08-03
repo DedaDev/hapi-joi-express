@@ -1,0 +1,18 @@
+{
+  "name": "hapi-joi-express",
+  "version": "1.0.0",
+  "description": "Express middleware for handling Joi validations.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hapi",
+    "joi",
+    "express",
+    "middleware",
+    "validation"
+  ],
+  "author": "Deda",
+  "license": "ISC"
+}
