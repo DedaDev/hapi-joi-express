@@ -1,4 +1,5 @@
 import { ObjectSchema } from "@hapi/joi";
+import { RequestHandler } from "express";
 
 export default {
   /**
@@ -7,19 +8,25 @@ export default {
    * @param {ObjectSchema} schema Joi schema.
    * @returns {void} The resulting sum of the two numbers.
    */
-  bodyValidation: (schema: ObjectSchema): void => {},
+  bodyValidation: (
+    schema: ObjectSchema
+  ): RequestHandler<P, ResBody, ReqBody, ReqQuery> => {},
   /**
-   * Checks validation for the express params ex. /profile/:id
+   * Checks validation for the express route params ex. /profile/:id
    *
    * @param {ObjectSchema} schema Joi schema.
    * @returns {void} The resulting sum of the two numbers.
    */
-  paramsValidation: (schema: ObjectSchema): void => {},
+  paramsValidation: (
+    schema: ObjectSchema
+  ): RequestHandler<P, ResBody, ReqBody, ReqQuery> => {},
   /**
    * Checks validation for the URL query params
    *
    * @param {ObjectSchema} schema Joi schema.
    * @returns {void} The resulting sum of the two numbers.
    */
-  queryValidation: (schema: ObjectSchema): void => {},
+  queryValidation: (
+    schema: ObjectSchema
+  ): RequestHandler<P, ResBody, ReqBody, ReqQuery> => {},
 };

@@ -1,8 +1,3 @@
-/**
- *
- * @param {Object} schema
- * @param {String} prop
- */
 const joiValidator = (schema, prop) => (req, res, next) => {
   const { error } = schema.validate(req[prop]);
   if (!error) next();
