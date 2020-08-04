@@ -1,6 +1,6 @@
 {
   "name": "hapi-joi-express",
-  "version": "1.3.0",
+  "version": "1.3.2",
   "description": "Express middleware for handling Joi validations.",
   "main": "index.js",
   "scripts": {
