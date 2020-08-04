@@ -11,9 +11,7 @@ const { bodyValidation } = require("hapi-joi-express");
 
 const schema = Joi.object({ username: Joi.string().required() });
 
-app.post("/login", bodyValidation(schema), (req, res) =>
-  res.json({ hello: "world" })
-);
+app.post("/login", bodyValidation(schema), (req, res) => res.json({ hello: "world" }));
 ```
 
 ### ES6 imports
@@ -27,7 +25,5 @@ const app = express();
 
 const schema = Joi.object({ username: Joi.string().required() });
 
-app.post("/login", bodyValidation(schema), (req, res) =>
-  res.json({ hello: "world" })
-);
+app.post("/login", bodyValidation(schema), (req, res) => res.json({ hello: "world" }));
 ```
